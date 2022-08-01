@@ -1,9 +1,9 @@
 // ./contract_a.sw
 contract;
 
-abi ContractA {
-    fn receive(field_1: bool, field_2: u64) -> u64;
-}
+dep interface;
+
+use interface::ContractA;
 
 impl ContractA for Contract {
     fn receive(field_1: bool, field_2: u64) -> u64 {

@@ -1,7 +1,9 @@
 // ./contract_b.sw
 contract;
 
-use contract_a::ContractA;
+dep interface;
+
+use interface::ContractA;
 
 abi ContractB {
     fn make_call();
